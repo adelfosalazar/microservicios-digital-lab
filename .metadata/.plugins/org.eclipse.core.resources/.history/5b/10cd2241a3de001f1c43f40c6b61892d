@@ -1,0 +1,26 @@
+package academy.digitallab.store.product;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import academy.digitallab.store.product.repository.ProductRepository;
+import academy.digitallab.store.product.service.ProductService;
+import academy.digitallab.store.product.service.ProductServiceImpl;
+
+@SpringBootTest
+public class ProductServiceMockTest {
+
+	private ProductService productService;
+	
+	@Mock
+	private ProductRepository productRepository;
+	
+	@BeforeEach
+	public void setUp() {
+		Mockito.mock(this);
+		
+		productService = new ProductServiceImpl(productRepository);
+	}
+}

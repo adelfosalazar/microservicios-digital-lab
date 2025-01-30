@@ -1,0 +1,29 @@
+spring.application.name=service-product
+
+server.port = 8080
+
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:dcbapp
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+spring.jpa.hibernate.ddl-auto=none
+#spring.h2.console.enabled=true
+##spring.datasource.url=jdbc:h2:file:~/digitalLabServiceProduct
+#spring.datasource.url=jdbc:h2:mem:digitalLabServiceProduct
+#spring.datasource.username=sa
+#spring.datasource.password=
+#spring.datasource.driver-class-name=org.h2.Driver
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+##Lanzar con create primero
+#spring.jpa.hibernate.ddl-auto=create
+
+##Detener la app y lanzar con always y update para cargar data.sql
+#spring.sql.init.mode=always
+#spring.jpa.hibernate.ddl-auto=update
+
+##Mandará error de nuevo, para continuar normal dejar solo update
+

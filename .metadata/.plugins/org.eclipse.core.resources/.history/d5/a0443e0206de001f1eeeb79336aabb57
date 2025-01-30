@@ -1,0 +1,8 @@
+package academy.digitallab.store.product;
+
+public class algo {
+
+	private String cadena = "g";
+	
+	
+}

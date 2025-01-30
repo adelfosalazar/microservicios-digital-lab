@@ -1,0 +1,16 @@
+package academy.digitallab.store.product;
+
+public class algo {
+
+	private String cadena = "g";
+
+//	public String getCadena() {
+//		return cadena;
+//	}
+//
+//	public void setCadena(String cadena) {
+//		this.cadena = cadena;
+//	}
+	
+	
+}

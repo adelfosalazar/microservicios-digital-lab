@@ -1,0 +1,19 @@
+#spring.application.name=config-service
+
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/adelfosalazar/ms-course-youtube-adelfo.git
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+          default-label: "master"
+  security:
+    user:
+      name: root
+      password: s3cr3t  

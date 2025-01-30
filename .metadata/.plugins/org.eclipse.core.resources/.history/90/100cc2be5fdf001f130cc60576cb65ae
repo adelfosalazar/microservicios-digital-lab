@@ -4,11 +4,13 @@ server:
   port: 8081
 
 spring:
+  profiles:
+    active: composite
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/adelfosalazar/ms-course-youtube-adelfo.git
+          uri: https://github.com/adelfosalazar/microservicios-digital-lab.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}

@@ -8,12 +8,12 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-#    serviceUrl:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    server:
-      waitTimeInMsWhenSyncEmpty: 0
-  dashboard:
-    path: /dashboard
-  instance:
-    hostname: localhost
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    server:
+#      waitTimeInMsWhenSyncEmpty: 0
+#  dashboard:
+#    path: /dashboard
+#  instance:
+#    hostname: localhost
 #    http://localhost:8099/dashboard

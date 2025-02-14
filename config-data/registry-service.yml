@@ -5,8 +5,8 @@ server:
 eureka:
   instance:
     hostname: localhost
-    preferIpAddress: true
-    instance-id:    
+#    preferIpAddress: true
+#    instance-id:    
   client:
     registerWithEureka: false
     fetchRegistry: false

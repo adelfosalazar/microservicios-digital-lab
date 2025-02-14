@@ -52,6 +52,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
   instance:
-    preferIpAddress: true
-    instance-id:
+#    preferIpAddress: true
+#    instance-id:
     

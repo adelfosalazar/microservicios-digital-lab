@@ -4,7 +4,7 @@ server:
   
 eureka:
   instance:
-    hostname: http://${server.address}:${server.port}
+    hostname: localhost
     preferIpAddress: true
   client:
     registerWithEureka: false
